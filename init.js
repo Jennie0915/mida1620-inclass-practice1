@@ -12,7 +12,7 @@ let ind = 1;
  * Function that repeatedly asks the user for input
  */
 function AskName() {
-  readline.question('Once apon a time, there is a horse ', output => {
+  readline.question('', input => {
     
     // If user types "exit", end the program
     if (input.toLowerCase() === 'exit') {
@@ -23,7 +23,7 @@ function AskName() {
 
     // Respond differently based on the number of times the question has been asked
     if (ind === 1) {
-      console.log("That horse loves eating sugar:", output);
+      console.log("Once apon a time, there is one horse:", input);
     } else if (ind === 2) {
       console.log("Thanks for telling me more:", input);
     } else if (ind === 3) {
